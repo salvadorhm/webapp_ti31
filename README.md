@@ -68,4 +68,20 @@ Indexar todo el contenido del repositorio para incluir todos los archivo nuevos 
 git add .
 ````
 
+## 9. Crear un **commit** o punto de control
+
+Crear un punto de control (**commit**) con los cambios realizados al proyecto.
+
+````shell
+git commit -m "CREATED configuración del ambiente virtual"
+````
+
+## 10. Realizar un **push** hacia el repositorio
+
+Realizar un **push** hacia el repositorio para sincronizar los cambios realizados en el proyecto.
+
+````shell
+git push -u origin main
+````
+
 
