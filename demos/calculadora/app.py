@@ -24,8 +24,13 @@ class Calculadora:
         numero_1 = int(formulario['numero_1'])
         numero_2 = int(formulario['numero_2'])
         operacion = formulario['operacion']
+        print(operacion)
 
         # TODO: programar la operación sumar
+        if operacion == "sumar":
+            resultado =  numero_1 + numero_2
+        else:
+            resultado =  None
         # TODO: programar la operación restar
         # TODO: programar la operación dividir
         # TODO: programar la operación multiplicar
@@ -34,12 +39,12 @@ class Calculadora:
         # TODO: programar la operación modulo
         # TODO: programar la operación limpiar los valores
 
-        resultado =  numero_1 + numero_2
+        
 
         print(f"El tipo de dato es: {type(numero_1)}")
 
-        return f"Formulario: {formulario}"
-        #return render.calculadora(numero_1, numero_2, resultado)
+        #return f"Formulario: {formulario}"
+        return render.calculadora(numero_1, numero_2, resultado)
 
 if __name__ == "__main__":
     app.run()
